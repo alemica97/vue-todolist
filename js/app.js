@@ -19,5 +19,11 @@ const app = new Vue({
         inputClass : 'enterInput',
         listContainer : 'list-container',
         listClass : 'list-element'
+    },
+    methods : {
+        removeTodo : function(index){
+            //con splice rimuovo l'elemento in posizione (index) dall'array
+            this.todoList.splice(index,1);
+        }
     }
 });

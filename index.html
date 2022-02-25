@@ -21,7 +21,7 @@
                     <span  v-bind:class="element.done === true ? 'line-through' : '' ">
                         {{ element.text }}
                     </span>
-                    <i class="fa-solid fa-x"></i>
+                    <i class="fa-solid fa-x" @click="removeTodo(index)"></i>
                 </li>
             </ul>
         </div>
