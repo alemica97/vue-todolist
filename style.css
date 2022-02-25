@@ -28,9 +28,10 @@ body{
 .input-wrapper{
     width: 450px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .input-wrapper > input{
