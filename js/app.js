@@ -1,6 +1,7 @@
 const app = new Vue({
     el : '#app',
     data : {
+        toAdd : '',
         todoList : [
             {
                 text : 'comprere il latte',
@@ -16,5 +17,7 @@ const app = new Vue({
             }
         ],
         inputClass : 'enterInput',
+        listContainer : 'list-container',
+        listClass : 'list-element'
     }
 });

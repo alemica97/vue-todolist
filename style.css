@@ -8,6 +8,10 @@ html{
     box-sizing: border-box;
 }
 
+ul{
+    list-style-type: none;
+}
+
 body{
     background-color: #333;
 }
@@ -20,6 +24,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-bottom: 15px;
 }
 
 .enterInput > input, .enterInput > button{
@@ -39,4 +44,34 @@ body{
 .enterInput > button:hover{
     background-color: rgb(0, 110, 219);
     transform: scale(1.05 , 1.05);
+}
+
+.list-element{
+    color: rgba(255, 255, 255, .8);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list-element li{
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-element li > i:hover{
+    color: rgb(211, 6, 6);
+}
+
+.list-container{
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+li.line-through{
+    color: red;
+    text-decoration: line-through;
 }
