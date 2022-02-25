@@ -9,6 +9,12 @@
     <title>Vue-Todo list</title>
 </head>
 <body>
+    <div id="app">
+        <div v-bind:class="inputClass">
+            <input type="text" id="text" >
+            <button>add</button>
+        </div>
+    </div>
     <!-- JavaScript -->
     <script src="js/app.js"></script>
 </body>

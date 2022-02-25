@@ -1,0 +1,42 @@
+html{
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+}
+
+.enterInput{
+    padding: 15px;
+    background-color: chocolate;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.enterInput > input, .enterInput > button{
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.enterInput > button{
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    background-color: dodgerblue;
+}
+
+.enterInput > button:hover{
+    background-color: rgb(0, 110, 219);
+    transform: scale(1.05 , 1.05);
+}
