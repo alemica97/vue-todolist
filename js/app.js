@@ -28,10 +28,14 @@ const app = new Vue({
         //funzione  che aggiunge ciò che è stato scritto nell'input nella lista, se non si scrive nulla darà errore
         addTodo : function(){
             if( this.toAdd !== ''){
-                this.todoList.push( {text : this.toAdd} );
+                this.todoList.push( {
+                                        text : this.toAdd,
+                                        done : false
+                                    }
+                );
                 this.toAdd = '';
             }else{
-                alert('Devi scrivere qualcosa per poterlo aggiungere ala lista')
+                alert('Devi scrivere qualcosa per poterlo aggiungere alla lista')
             } 
         }
     }
