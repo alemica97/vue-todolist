@@ -71,7 +71,7 @@ body{
     max-width: 450px;
 }
 
-li.line-through{
-    color: red;
+span.line-through{
+    color: rgb(211, 6, 6);
     text-decoration: line-through;
 }

@@ -17,8 +17,10 @@
         </div>
         <div v-bind:class="listContainer">
             <ul v-bind:class="listClass">
-                <li v-for="(element, index) in todoList" class="element.done === true ? 'line-through' : '' ">
-                    <span>{{ element.text }}</span>
+                <li v-for="(element, index) in todoList">
+                    <span  v-bind:class="element.done === true ? 'line-through' : '' ">
+                        {{ element.text }}
+                    </span>
                     <i class="fa-solid fa-x"></i>
                 </li>
             </ul>
