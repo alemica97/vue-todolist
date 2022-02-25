@@ -25,9 +25,14 @@ const app = new Vue({
             //con splice rimuovo l'elemento in posizione (index) dall'array
             this.todoList.splice(index,1);
         },
+        //funzione  che aggiunge ciò che è stato scritto nell'input nella lista, se non si scrive nulla darà errore
         addTodo : function(){
-            this.todoList.push( this.toAdd );
-            this.toAdd = '';
+            if( this.toAdd !== ''){
+                this.todoList.push( {text : this.toAdd} );
+                this.toAdd = '';
+            }else{
+                alert('Devi scrivere qualcosa per poterlo aggiungere ala lista')
+            } 
         }
     }
 });
