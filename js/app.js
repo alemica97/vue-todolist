@@ -24,6 +24,10 @@ const app = new Vue({
         removeTodo : function(index){
             //con splice rimuovo l'elemento in posizione (index) dall'array
             this.todoList.splice(index,1);
+        },
+        addTodo : function(){
+            this.todoList.push( this.toAdd );
+            this.toAdd = '';
         }
     }
 });
